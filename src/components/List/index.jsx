@@ -1,3 +1,4 @@
+import { Card } from "../Card/index";
 import { MdAdd } from "react-icons/md";
 import { Container } from "./styles";
 
@@ -11,7 +12,13 @@ export function List() {
         </button>
       </header>
 
-      <ul></ul>
+      <ul>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </ul>
     </Container>
   );
 }
