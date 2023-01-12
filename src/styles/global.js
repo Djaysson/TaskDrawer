@@ -4,7 +4,9 @@ export default createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 :root{
+  
   --white: #C2CBD4;
+  --transparent-white:rgba(255, 255, 255, 0.05);
   --gray:#54657B;
   --background: #0E172B;
   --background-02: #151E32;
