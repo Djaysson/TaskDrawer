@@ -1,14 +1,16 @@
 import Avatar from "../../assets/img/avatarM.png";
 import { Container, Label } from "./styles";
 
-export function Card() {
+export function Card({ data }) {
   return (
     <Container>
       <header>
-        <Label color="#5B21B6" />
+        {data.labels.map((label) => (
+          <Label key={label} color={label} />
+        ))}
       </header>
-      <p>Fazer a migração completa de servidor</p>
-      <img src={Avatar} alt="" />
+      <p>{data.content}</p>
+      {data.user && <img src={data.user} alt="avatar" />}
     </Container>
   );
 }
